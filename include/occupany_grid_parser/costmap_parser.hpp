@@ -42,6 +42,8 @@ private:
 
   float robot_radius;  // we assume the footprint of the robot is a circle
 
+  rclcpp::Logger logger_{ rclcpp::get_logger("costmap_parser") };
+
   // Size of gradient in cells
   //   int GRADIENT_SIZE = 20;
   //   // Step of increasing cost per one cell in gradient

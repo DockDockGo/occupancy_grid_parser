@@ -134,9 +134,10 @@ void CostmapParser::updateCosts(nav2_costmap_2d::Costmap2D& master_grid, int min
     CBSmap[0].resize(size_y);
   }
 
-  std::cout << "--------------------------------\n\n\n\n";
-  std::cout << "min_i = " << min_i << " min_j =  " << min_j << "max_i = " << max_i << " max_j =  " << max_j
-            << std::endl;
+  RCLCPP_INFO(logger_, "--------------------------------\n\n\n\n");
+
+  RCLCPP_INFO(logger_, "min_i  = %d, min_j =  %d, max_i = %d , max_j = %d", min_i, min_j, max_i, max_j);
+
   for (int i = min_i; i < max_i; i++)
   {
     for (int j = min_j; j < max_j; j++)
@@ -149,7 +150,7 @@ void CostmapParser::updateCosts(nav2_costmap_2d::Costmap2D& master_grid, int min
     }
     std::cout << std::endl;
   }
-  std::cout << "\n\n\n\n--------------------------------";
+  RCLCPP_INFO(logger_, "--------------------------------\n\n\n\n");
 }
 
 }  // namespace nav2_gradient_costmap_plugin
