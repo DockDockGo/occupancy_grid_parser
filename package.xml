@@ -13,12 +13,12 @@
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
-  <depend>nav2_costmap_2d</depend>
-  <depend>pluginlib</depend>
-  <depend>rclcpp</depend>
+  <exec_depend>nav2_costmap_2d</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
 
   <export>
-    <costmap_2d plugin="${prefix}/grid_parser_plugin.xml" />
+    <costmap_2d plugin="${prefix}/occupancy_grid_parser.xml" />
     <build_type>ament_cmake</build_type>
   </export>
 </package>

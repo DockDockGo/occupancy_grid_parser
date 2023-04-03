@@ -1,5 +1,5 @@
-// #ifndef GRADIENT_LAYER_HPP_
-// #define GRADIENT_LAYER_HPP_
+#ifndef COSTMAP_PARSER_HPP_
+#define COSTMAP_PARSER_HPP_
 
 #include "rclcpp/rclcpp.hpp"
 #include "nav2_costmap_2d/layer.hpp"
@@ -52,4 +52,4 @@ private:
 
 }  // namespace ddg_costmap_parser_plugin
 
-// #endif  // GRADIENT_LAYER_HPP_
+#endif  // GRADIENT_LAYER_HPP_

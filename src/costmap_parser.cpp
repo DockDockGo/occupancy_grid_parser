@@ -1,4 +1,4 @@
-#include "occupancy_grid_parser/costmap_parser.hpp"
+#include "../include/occupany_grid_parser/costmap_parser.hpp"
 
 #include "nav2_costmap_2d/costmap_math.hpp"
 #include "nav2_costmap_2d/footprint.hpp"
@@ -8,7 +8,7 @@ using nav2_costmap_2d::INSCRIBED_INFLATED_OBSTACLE;
 using nav2_costmap_2d::LETHAL_OBSTACLE;
 using nav2_costmap_2d::NO_INFORMATION;
 
-namespace nav2_gradient_costmap_plugin
+namespace ddg_costmap_parser_plugin
 {
 
 CostmapParser::CostmapParser()
@@ -153,8 +153,8 @@ void CostmapParser::updateCosts(nav2_costmap_2d::Costmap2D& master_grid, int min
   RCLCPP_INFO(logger_, "--------------------------------\n\n\n\n");
 }
 
-}  // namespace nav2_gradient_costmap_plugin
-namespace ddg_costmap_parser_plugin
+}  // namespace ddg_costmap_parser_plugin
+// namespace ddg_costmap_parser_plugin
 
 // This is the macro allowing a nav2_gradient_costmap_plugin::CostmapParser class
 // to be registered in order to be dynamically loadable of base type nav2_costmap_2d::Layer.

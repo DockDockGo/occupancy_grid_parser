@@ -1,0 +1,7 @@
+<library path="occupancy_grid_parser">
+  <class type="occupancy_grid_parser::CostmapParser" base_class_type="nav2_costmap_2d::Layer">
+    <description>
+      This is plugin parses the costmap2d to a CBSH@-RTC style map
+    </description>
+  </class>
+</library>
